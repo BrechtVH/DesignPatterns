@@ -14,6 +14,7 @@
     /// - Promotes loose coupling and adherence to SOLID principles.
     /// </summary>
 
+    #region Definitions
     enum BeverageType
     {
         Coffee,
@@ -49,7 +50,9 @@
             Console.WriteLine("Coffee is being prepared");
         }
     }
+    #endregion
 
+    #region Factory
     /// <summary>
     /// Factory class responsible for creating instances of beverages based on the specified type.
     /// </summary>
@@ -68,7 +71,9 @@
             }
         }
     }
+    #endregion
 
+    #region Example
     class Person
     {
         public void PrepareDrink(BeverageType beverageType)
@@ -86,4 +91,5 @@
             person.PrepareDrink(BeverageType.Tea);
         }
     }
+    #endregion
 }
